@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/demo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="demo"
+        android:onClick="onClick"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/demo2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="demo2"
+        android:onClick="onClick"
+        app:layout_constraintTop_toBottomOf="@+id/demo"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/mSurfaceView"
+        android:layout_width="match_parent"
+        android:onClick="onClick"
+        android:text="图片"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/demo2"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/mGlSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="onClick"
+        android:gravity="center"
+        android:text="GL_Surface"
+        app:layout_constraintTop_toBottomOf="@+id/mSurfaceView"/>
+
+    <Button
+        android:id="@+id/mRecordView"
+        android:layout_width="match_parent"
+        android:onClick="onClick"
+        android:text="录音"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/mGlSurfaceView"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/mPlayView"
+        android:layout_width="match_parent"
+        android:onClick="onClick"
+        android:text="播放"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/mRecordView"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/mCameraSurfaceView"
+        android:layout_width="match_parent"
+        android:onClick="onClick"
+        android:text="相机surface"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/mPlayView"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/mMediaRecorderSurfaceView"
+        android:layout_width="match_parent"
+        android:onClick="onClick"
+        android:text="录像surface"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/mCameraSurfaceView"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="onClick"
+        android:text="测试"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/mMediaRecorderSurfaceView"/>
+
+</android.support.constraint.ConstraintLayout>

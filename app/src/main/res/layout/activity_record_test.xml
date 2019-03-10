@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/mStartView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="录制"/>
+
+    <Button
+        android:id="@+id/mStopView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="停止"
+        app:layout_constraintTop_toBottomOf="@+id/mStartView"
+        android:onClick="onClick"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/mDecoderView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="转码"
+        app:layout_constraintTop_toBottomOf="@+id/mStopView"
+        android:onClick="onClick"
+        android:gravity="center"/>
+
+</android.support.constraint.ConstraintLayout>

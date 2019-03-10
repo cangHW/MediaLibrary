@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LiveMaker</string>
+    <string name="camera_open_failed">链接相机设备失败</string>
+    <string name="session_create_failed">相机无法使用</string>
+    <string name="session_capture_failed">操作失败</string>
+    <string name="create_record_time_error">录音时长记录失败</string>
+    <string name="no_camera_permission">无法打开相机，请检查是否已经开启权限</string>
+    <string name="camera_initialize_failed">相机初始化失败</string>
+    <string name="unKnown">相机发生未知错误</string>
+</resources>
